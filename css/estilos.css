@@ -1,0 +1,26 @@
+body {
+
+backround-color: powderblue;
+}
+
+h1 {
+color: #b5f013;
+}
+
+ul {
+color: #5913f0;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+display: block;
+width: 50px;
+height: 50px;
+width: 100%;
+}
+
+figcaption {text-align: center;}
