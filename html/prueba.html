@@ -24,11 +24,8 @@
         }
         .album-cover {
             width: 150px;
-            height: 150px;
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: 150px; /* Mantenemos el mismo tamaño para que sea cuadrado */
+            /* Eliminamos background-color para mostrar las imágenes */
             border-radius: 10px;
         }
         .album-title {
@@ -40,10 +37,9 @@
 <body>
     <div class="navbar">Home Karol G</div>
     <div class="album-gallery">
-        <div class="album-cover" style="background-image: url('../figuras/msbbs.jpg');width: 150px;
-            height: 150px;"></div>
         <div class="album-cover" style="background-image: url('../figuras/msb.jpg');"></div>
-        <div class="album-cover" style="background-image: url('../figuras/ocean.jpg');"></div>
+        <div class="album-cover" style="background-image: url('msb.jpg');"></div>
+        <div class="album-cover" style="background-image: url('msbbs.jpg');"></div>
         <div class="album-cover" style="background-image: url('ocean.jpg');"></div>
         <div class="album-cover" style="background-image: url('unstoppable.jpg');"></div>
         <div class="album-cover" style="background-image: url('la_bichota.jpg');"></div>
@@ -51,3 +47,4 @@
     <div class="album-title">Muneca | Mamiii | 200 Copas | Ocean | UNSTOPPABLE | La Bichota – Bad Gyal</div>
 </body>
 </html>
+
