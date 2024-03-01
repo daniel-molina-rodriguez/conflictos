@@ -7,21 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mañana Será Bonito</title>
     <style>
-
-           /* Estilos para la barra de búsqueda */
-        #search-container {
-            text-align: center;
+   /* Estilos para el menú */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        #search-input {
-            width: 200px;
-            padding: 5px;
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
         }
-        #search-button {
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+        .menu li:hover ul {
+            display: block;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .submenu li {
+            display: block;
+            margin: 5px 0;
+        }
+      
         }
         body {
             background-color: turquoise;
@@ -54,10 +64,18 @@
 </head>
 <body>
 
-    <div id="search-container">
-        <input type="text" id="search-input" placeholder="Buscar...">
-        <button id="search-button">Buscar</button>
-    </div>
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li>
+            <a href="#">Productos</a>
+            <ul class="submenu">
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Zapatos</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
 
 <Body bgcolor=#37b859>
         <!-- Header Principal -->
